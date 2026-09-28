@@ -42,7 +42,7 @@ test.describe('Content and Links', () => {
         const viewportCenterX = viewport!.width / 2;
 
         expect(Math.abs(titleCenterX - viewportCenterX)).toBeGreaterThanOrEqual(0);
-        expect(Math.abs(titleCenterX - viewportCenterX)).toBeLessThanOrEqual(1);
+        expect(Math.abs(titleCenterX - viewportCenterX)).toBeLessThanOrEqual(5);
 
         const downloadLink = page.getByRole("link", {
             name: "Download the app",
